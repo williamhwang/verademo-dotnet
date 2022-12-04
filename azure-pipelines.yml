@@ -35,7 +35,7 @@ steps:
     script: |
       curl -sSO https://downloads.veracode.com/securityscan/pipeline-scan-LATEST.zip
       unzip -o pipeline-scan-LATEST.zip
-      java -jar pipeline-scan.jar -vid $(VERACODE_API_ID) -vkey $(VERACODE_API_KEY) -f $(build.artifactstagingdirectory)\Verademo-dotnet.zip || true
+      java -jar pipeline-scan.jar -vid $(3800e987df0974d24c188d2ac4b176df) -vkey $(17ef45b347f9b02df690d5e93463a5c69adff5ea8ab5b0a561b4071b9150e963278491420e19076982492383db3bd1f9e0d918fbe1200d1a9fafff908ec7a55b) -f $(build.artifactstagingdirectory)\Verademo-dotnet.zip || true
 
 - task: PublishBuildArtifacts@1
   displayName: Create Build Artifact for Veracode Static Pipeline Scanner Results
