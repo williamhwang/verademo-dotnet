@@ -6,7 +6,8 @@
 
 trigger:
 - main
-
+on:
+  push
 pool:
   vmImage: 'windows-latest'
 
